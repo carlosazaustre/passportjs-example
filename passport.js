@@ -56,10 +56,10 @@ module.exports = function(passport) {
 
 	// Configuración del autenticado con Facebook
 	passport.use(new FacebookStrategy({
-		clientID			: config.facebook.id,
+		clientID			: config.facebook.key,
 		clientSecret	: config.facebook.secret,
 		callbackURL	 : '/auth/facebook/callback',
-		profileFields : ['id', 'displayName', 'provider', 'photos']
+		profileFields : ['id', 'displayName', /*'provider',*/ 'photos']
 	}, function(accessToken, refreshToken, profile, done) {
 		// El campo 'profileFields' nos permite que los campos que almacenamos
 		// se llamen igual tanto para si el usuario se autentica por Twitter o
