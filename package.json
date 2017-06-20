@@ -6,11 +6,17 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.4.4",
-    "jade": "*",
-    "mongoose": "~3.8.8",
-    "passport": "~0.2.0",
-    "passport-facebook": "~1.0.2",
-    "passport-twitter": "~1.0.2"
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.10.7",
+    "morgan": "^1.8.2",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-twitter": "^1.0.4",
+    "pug": "^2.0.0-rc.2",
+    "serve-favicon": "^2.4.3"
   }
 }
